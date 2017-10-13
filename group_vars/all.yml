@@ -6,7 +6,7 @@ SERVER_ROLE: web
 
 # VPC specific variables
 VPC_NAME: '{{ ORG }}-{{ ENVIRONMENT }}'
-VPC_REGION: us-west-1
+VPC_REGION: us-east-1
 VPC_CIDR: '10.0.0.0/16'
 
 # EC2 instances specific variables

@@ -1,6 +1,6 @@
 ---
 VPC_NAME: test
-VPC_REGION: us-west-1
+VPC_REGION: us-east-1
 VPC_CIDR: '10.0.0.0/16'
 
 # Variables for VPC

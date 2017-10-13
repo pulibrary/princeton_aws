@@ -1,0 +1,21 @@
+---
+# Environment specific variables
+ORG: pulibrary
+ENVIRONMENT: dev
+SERVER_ROLE: web
+
+# VPC specific variables
+VPC_NAME: '{{ ORG }}-{{ ENVIRONMENT }}'
+VPC_REGION: us-east-1
+VPC_CIDR: '10.0.0.0/16'
+
+# EC2 instances specific variables
+EC2_INSTANCE_TYPE: t2.medium
+EC2_SECURITY_GROUP_NAME:
+  - '{{ VPC_NAME }}-{{ SSH_SG_NAME }}'
+  - '{{ VPC_NAME }}-{{ WEB_SG_NAME }}'
+EC2_VOLUME_SIZE: 10
+EC2_COUNT: 1
+EC2_SUBNET_ID:
+  - '{{ PUBLIC_SUBNET_1 }}'
+  - '{{ PUBLIC_SUBNET_2 }}'

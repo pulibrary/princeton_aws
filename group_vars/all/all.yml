@@ -19,3 +19,7 @@ EC2_COUNT: 1
 EC2_SUBNET_ID:
   - '{{ PUBLIC_SUBNET_1 }}'
   - '{{ PUBLIC_SUBNET_2 }}'
+
+# Ubuntu AMI specific variables
+AMI_NAME: 'ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*'
+AMI_OWNER: '099720109477'

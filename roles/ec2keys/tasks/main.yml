@@ -22,7 +22,7 @@
 
     - name: Set the Key location as fact
       set_fact:
-        ssh_key_location: '/home/{{ login_user.stdout }}/.ssh/id_rsa.pub'
+        ssh_key_location: '/Users/{{ login_user.stdout }}/.ssh/id_rsa.pub'
 
     - name: Check for SSH Key exists for  login_user.stdout  user
       stat:

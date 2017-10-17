@@ -8,6 +8,8 @@ SERVER_ROLE: web
 VPC_NAME: '{{ ORG }}-{{ ENVIRONMENT }}'
 VPC_REGION: us-east-1
 VPC_CIDR: '10.0.0.0/16'
+public_subnet_1_cidr: '10.0.1.0/24'
+
 
 # EC2 instances specific variables
 EC2_INSTANCE_TYPE: t2.medium
@@ -17,8 +19,7 @@ EC2_SECURITY_GROUP_NAME:
 EC2_VOLUME_SIZE: 10
 EC2_COUNT: 1
 EC2_SUBNET_ID:
-  - '{{ PUBLIC_SUBNET_1 }}'
-  - '{{ PUBLIC_SUBNET_2 }}'
+  - '{{ public_subnet_1_cidr }}'
 
 # Ubuntu AMI specific variables
 AMI_NAME: 'ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*'

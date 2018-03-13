@@ -31,7 +31,7 @@ In order to log into your EC2 instance terraform will upload your ssh keys
 to your AWS. To generate your keys
 
 ```
-ssh-keygen -t rsa -C "docnow_key" -f ./not_your_usual_key
+ssh-keygen -t rsa -C "not_your_usual_key" -f ./not_your_usual_key
 ```
 then add them to your sessions with 
 

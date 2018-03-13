@@ -1,0 +1,3 @@
+[submodule "staging/ansible"]
+	path = staging/ansible
+	url = git@github.com:pulibrary/princeton_ansible.git
